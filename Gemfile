@@ -23,7 +23,20 @@ gem 'puma', '~> 5.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
+
+gem 'devise', '~> 4.8.0'
+
+gem 'devise-jwt', '~> 0.9.0'
+
+gem 'dotenv-rails'
+
+# AnyCable allows you to use any WebSocket server (written in any language)
+# as a replacement for built-in Rails Action Cable server.
+gem "anycable-rails"
+
+# when using Redis broadcast adapter
+gem "redis", ">= 4.0"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
